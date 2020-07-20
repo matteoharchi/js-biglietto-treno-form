@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>ACQUISTA IL TUO BIGLIETTO</h1>
+<!-- INSERIMENTO DATI -->
+      <div id="input-box">
+        <div class="inserimento-dati">
+          <div class="name">
+            <h4>Nome e cognome</h4>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="km">
+            <h4>Km da percorrere</h4>
+            <input type="number" name="km" value="km" id="km">
+          </div>
+          <div class="prezzo">
+            <h4>Fascia di prezzo</h4>
+            <select id="categoria-prezzo" name="categoria-prezzo">
+              <option value="adulto">Adulto</option>
+              <option value="minorenne">Minorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="button" name="button" id="genera">Genera</button>
+            <button type="button" name="button" id="annulla">Annulla</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- BIGLIETTO -->
+      <h2>IL TUO BIGLIETTO</h2>
+      <div id="section-title" class="hidden">
+        <h3>DETTAGLIO PASSEGGERI</h3>
+      </div>
+      <div id="ticket" class="box hidden">
+        <div class="nome-passeggero">
+          <h3>NOME PASSEGGERO</h3>
+          <p id="passenger"></p>
+        </div>
+        <div class="data">
+          <table id="dati ticket">
+            <tr>
+              <th>Offerta</th>
+              <th>Carrozza</th>
+              <th>Codice CP</th>
+              <th>Prezzo</th>
+            </tr>
+            <tr>
+              <td id="offerta"></td>
+              <td id="carrozza"></td>
+              <td id="codice"></td>
+              <td id="prezzo"></td>
+            </tr>
+          </table>
+        </div>
+
+
+      </div>
+
+
+<!-- SCRIPT -->
+
+    <script src="js\script.js" charset="utf-8"></script>
+
+    </div>
+  </body>
+</html>
